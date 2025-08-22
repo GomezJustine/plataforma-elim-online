@@ -55,7 +55,7 @@ nav ul li a:hover {
     background: #fff;
     color: #6c63a4;
 }
-.nav-buttons {
+.nav-buttons  {
     display: flex;
     gap: 1rem;
 }
@@ -86,7 +86,7 @@ nav ul li a:hover {
     background: #e0def7;
 }
 
-/* Hero Section */
+/* Hero Section*/ 
 .hero {
     background: linear-gradient(90deg, #a39bc2 60%, #6c63a4 100%);
     color: #fff;
@@ -102,13 +102,13 @@ nav ul li a:hover {
     margin-bottom: 2rem;
 }
 
-/* Cursos */
-#cursos {
+/* Cursos /  Hero section detalle curso*/
+#cursos, .cursodetalle-hero {
     background: #f6f6fa;
     padding: 3rem 1rem;
     text-align: center;
 }
-#cursos h2 {
+#cursos h2, .cursodetalle-hero h1 {
     color: #6c63a4;
     margin-bottom: 0.5rem;
 }
@@ -338,3 +338,72 @@ footer a:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  
 }   
 
+/* Estilos para deatlle del curso */
+
+.curso-detalles {
+    background: #f6f6fa;
+    padding: 1rem 1rem;
+    text-align: center;
+    margin-top: 0;
+}
+.detalles-numericos {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.8rem;
+    margin: 0.8rem 0 1.5rem 0;
+    padding: 0.4rem;
+    width: 100%;
+}
+
+.detalle-item {
+    background: #fff;
+    border-radius: 6px;
+    padding: 0.6rem 0.8rem;
+    box-shadow: 0 1px 6px rgba(108, 99, 164, 0.1);
+    min-width: 90px;
+    text-align: center;
+    flex: 1;
+    max-width: 130px;
+}
+
+.detalle-item h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #6c63a4;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.detalle-item p {
+    margin: 0.2rem 0 0 0;
+    font-size: 0.8rem;
+    color: #333333;
+    line-height: 1.2;
+}
+
+.curso-imagenPortada {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(108, 99, 164, 0.12);
+}
+
+.curso-imagenPortada img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .curso-imagenPortada {
+        max-width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 6px;
+    }
+}
