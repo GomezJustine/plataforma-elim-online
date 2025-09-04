@@ -11,6 +11,7 @@ a {
     text-decoration: none;
     transition: color 0.2s;
 }
+
 a:hover {
     color: #483d8b;
 }
@@ -20,6 +21,7 @@ header {
     background: linear-gradient(90deg, #a39bc2 60%, #6c63a4 100%);
     padding: 10px;
 }
+
 header h1 {
     margin: 0;
     padding: 2rem 0 0.5rem 0;
@@ -28,6 +30,7 @@ header h1 {
     font-size: 2.5rem;
     letter-spacing: 2px;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -36,6 +39,7 @@ nav {
     margin: 0 auto;
     padding: 15px;
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -43,6 +47,7 @@ nav ul {
     margin: 0;
     padding: 0;
 }
+
 nav ul li a {
     color: #fff;
     font-weight: 500;
@@ -51,17 +56,20 @@ nav ul li a {
     border-radius: 20px;
     transition: background 0.2s;
 }
+
 nav ul li a:hover {
     background: #fff;
     color: #6c63a4;
 }
-.nav-buttons  {
+
+.nav-buttons {
     display: flex;
     gap: 1rem;
 }
 
 /* Botones */
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
     border: none;
     border-radius: 20px;
     padding: 0.7rem 1.5rem;
@@ -70,48 +78,58 @@ nav ul li a:hover {
     font-weight: 600;
     transition: background 0.2s, color 0.2s;
 }
+
 .btn-primary {
     background: #6c63a4;
     color: #fff;
 }
+
 .btn-primary:hover {
     background: #483d8b;
 }
+
 .btn-secondary {
     background: #fff;
     color: #6c63a4;
     border: 2px solid #6c63a4;
 }
+
 .btn-secondary:hover {
     background: #e0def7;
 }
 
-/* Hero Section*/ 
+/* Hero Section*/
 .hero {
     background: linear-gradient(90deg, #a39bc2 60%, #6c63a4 100%);
     color: #fff;
     text-align: center;
     padding: 1rem 1rem 3rem 1rem;
 }
+
 .hero h2 {
     font-size: 2.2rem;
     margin-bottom: 1rem;
 }
+
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
 /* Cursos /  Hero section detalle curso*/
-#cursos, .cursodetalle-hero {
+#cursos,
+.cursodetalle-hero {
     background: #f6f6fa;
     padding: 3rem 1rem;
     text-align: center;
 }
-#cursos h2, .cursodetalle-hero h1 {
+
+#cursos h2,
+.cursodetalle-hero h1 {
     color: #6c63a4;
     margin-bottom: 0.5rem;
 }
+
 .cursos-lista {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -121,27 +139,32 @@ nav ul li a:hover {
     margin-left: auto;
     margin-right: auto;
 }
+
 .curso {
     background: #fff;
     border-radius: 18px;
-    box-shadow: 0 2px 16px rgba(108,99,164,0.08);
+    box-shadow: 0 2px 16px rgba(108, 99, 164, 0.08);
     padding: 2rem 1.2rem 1.5rem 1.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: transform 0.15s, box-shadow 0.15s;
 }
+
 .curso:hover {
     transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 6px 24px rgba(108,99,164,0.15);
+    box-shadow: 0 6px 24px rgba(108, 99, 164, 0.15);
 }
+
 .curso img {
     margin-bottom: 1rem;
 }
+
 .curso h3 {
     color: #6c63a4;
     margin-bottom: 0.5rem;
 }
+
 .curso ul {
     list-style: none;
     padding: 0;
@@ -151,6 +174,7 @@ nav ul li a:hover {
     color: #483d8b;
     font-weight: 500;
 }
+
 .curso button {
     margin-top: auto;
 }
@@ -163,8 +187,9 @@ nav ul li a:hover {
     align-items: center;
     padding: 1rem 1rem 1rem 1rem;
     text-align: center;
-  
+
 }
+
 .about h2 {
     margin-bottom: 1rem;
 }
@@ -176,9 +201,11 @@ nav ul li a:hover {
     padding: 3rem 1rem;
     text-align: center;
 }
+
 .contact h2 {
     margin-bottom: 1.5rem;
 }
+
 .contact-form {
     max-width: 400px;
     margin: 0 auto;
@@ -186,6 +213,7 @@ nav ul li a:hover {
     flex-direction: column;
     gap: 1rem;
 }
+
 .contact-form input,
 .contact-form textarea {
     border: none;
@@ -194,9 +222,11 @@ nav ul li a:hover {
     font-size: 1rem;
     resize: none;
 }
+
 .contact-form textarea {
     min-height: 100px;
 }
+
 .contact-form button {
     align-self: flex-end;
 }
@@ -209,11 +239,13 @@ footer {
     padding: 2rem 1rem;
     font-size: 1rem;
 }
+
 footer a {
     color: #fff;
     text-decoration: underline;
     margin: 0 0.2rem;
 }
+
 footer a:hover {
     color: #a39bc2;
 }
@@ -226,7 +258,7 @@ footer a:hover {
     max-width: 500px;
     margin: 3rem auto 2rem auto;
     border-radius: 18px;
-    box-shadow: 0 2px 16px rgba(108,99,164,0.10);
+    box-shadow: 0 2px 16px rgba(108, 99, 164, 0.10);
     text-align: center;
 }
 
@@ -245,7 +277,7 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    background: rgba(255,255,255,0.10);
+    background: rgba(255, 255, 255, 0.10);
     padding: 2rem 1rem;
     border-radius: 12px;
 }
@@ -255,7 +287,7 @@ footer a:hover {
     margin-bottom: 10px;
     padding: 0;
     text-align: left;
-    
+
 }
 
 .register-section legend {
@@ -317,9 +349,11 @@ footer a:hover {
         flex-direction: column;
         gap: 1rem;
     }
+
     .cursos-lista {
         grid-template-columns: 1fr;
     }
+
     .hero {
         padding: 2.5rem 1rem 2rem 1rem;
     }
@@ -335,8 +369,8 @@ footer a:hover {
     max-width: 500px;
     margin: auto;
     border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  
-}   
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 
 
 
@@ -474,7 +508,8 @@ footer a:hover {
     text-decoration: none;
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover,
+.nav-link:focus {
     background: #6c63a4;
     color: #fff;
     transform: translateY(-2px);
@@ -658,82 +693,82 @@ footer a:hover {
         padding: 1.5rem 0.8rem;
         margin: 1rem;
     }
-    
+
     .cursodetalle-hero h1 {
         font-size: 1.8rem;
     }
-    
+
     .curso-imagenPortada {
         max-width: 100%;
         border-radius: 8px;
     }
-    
+
     .detalles-numericos {
         gap: 0.8rem;
     }
-    
+
     .detalle-item {
         padding: 0.8rem 0.6rem;
         min-width: 90px;
         max-width: 110px;
     }
-    
+
     .detalle-item h3 {
         font-size: 1rem;
     }
-    
+
     .detalle-item p {
         font-size: 0.75rem;
     }
-    
+
     .contenido-navegacion ul {
         flex-direction: column;
     }
-    
+
     .instructor-info {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .contenido-seccion {
         padding: 1rem;
         scroll-margin-top: 120px;
     }
-    
+
     .instructor-imagen {
         margin: 0 auto;
     }
-    
+
     .nav-link {
         padding: 0.6rem 1rem;
     }
-    
+
     .curso-compra {
         padding: 1.5rem;
         margin: 2rem 1rem;
     }
-    
+
     .compra-container h2 {
         font-size: 1.5rem;
     }
-    
+
     .compra-detalles {
         width: 100%;
     }
-    
+
     .compra-detalles li {
         font-size: 0.9rem;
     }
-    
+
     .compra-detalles strong {
         min-width: 100px;
     }
-    
+
     .btn-comprar {
         padding: 0.9rem 2rem;
         font-size: 1rem;
     }
-    
+
     .compra-info {
         font-size: 0.85rem;
     }
@@ -744,16 +779,73 @@ footer a:hover {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .detalle-item {
         max-width: 200px;
         width: 100%;
     }
 }
+
 /*estilo para términos y condiciones*/
+
+
 .titulo-terminos {
+    background: #c6c6f0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: white;
+    padding: 1 rem;
+    margin: 1rem;
+    border-radius: 8px;
     font-size: 50px;
-     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f6f6fa;
-    color: #333;
+    border-left: 4px solid #6c63a4;
+    text-align: center;
+    align-content: position;
+}
+
+.subtitulo {
+    background: #c6c6f0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: white;
+    padding: 1 rem;
+    margin: 1rem;
+    border-radius: 8px;
+    font-size: 25px;
+    border-left: 4px solid #6c63a4;
+    text-align: center;
+    align-content: position;
+}
+
+h3 {
+    background: #c6c6f0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    margin: 20px;
+    font-size: 20PX;
+    color: #6c63a4;
+    align-items: center;
+    padding: 20PX;
+
+}
+
+h1 {
+    background: #c6c6f0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 20px;
+    color: #6c63a4;
+    font-size: 30px;
+    align-items: center;
+    image-orientation: from-image;
+}
+h4{
+    margin: 20px;
+    font-size: 0.9rem;
+    margin: 20px;
+    color: #6c63a4;
+    font-size: 13px;
+    align-items: center;
+    text-align: justify;
+    
 }
