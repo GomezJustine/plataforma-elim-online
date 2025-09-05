@@ -1,0 +1,63 @@
+/*estilo para términos y condiciones*/
+
+
+.titulo-terminos {
+    background: #c6c6f0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: white;
+    padding: 1 rem;
+    margin: 1rem;
+    border-radius: 8px;
+    font-size: 50px;
+    border-left: 4px solid #6c63a4;
+    text-align: center;
+    align-content: position;
+}
+
+.subtitulo {
+    background: #c6c6f0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: white;
+    padding: 1 rem;
+    margin: 1rem;
+    border-radius: 8px;
+    font-size: 25px;
+    border-left: 4px solid #6c63a4;
+    text-align: center;
+    align-content: position;
+}
+
+h3 {
+    background: #c6c6f0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    margin: 20px;
+    font-size: 20PX;
+    color: #6c63a4;
+    align-items: center;
+    padding: 20PX;
+
+}
+
+h1 {
+    background: #c6c6f0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 20px;
+    color: #6c63a4;
+    font-size: 30px;
+    align-items: center;
+    image-orientation: from-image;
+}
+h4{
+    margin: 20px;
+    font-size: 0.9rem;
+    margin: 20px;
+    color: #6c63a4;
+    font-size: 13px;
+    align-items: center;
+    text-align: justify;
+    
+}
