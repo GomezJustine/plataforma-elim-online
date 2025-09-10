@@ -1,5 +1,6 @@
 // LOGIN (login.html)
 document.addEventListener("DOMContentLoaded", () => {
+  const API_BASE = "http://localhost:3000"; // Ajusta si tu backend corre en otro host/puerto
   const form = document.getElementById("loginForm");
 
   form.addEventListener("submit", async (e) => {
@@ -22,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     try {
       //Enviar datos al backend
-      const response = await fetch("/api/login", {
+      const response = await fetch(`${API_BASE}/api/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -38,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Guardar token en localStorage (para futuras peticiones)
       localStorage.setItem("token", result.token);
       // Redirigir al dashboard
-      window.location.href = "/Frontend/src/pages/Dashboard/Dashboard.html";
+      window.location.href = "/Frontend/src/pages/dashboard/dashboard.html";
     } catch (err) {
       console.error("Error de conexión:", err);
       alert("⚠️ No se pudo conectar con el servidor, intenta más tarde");

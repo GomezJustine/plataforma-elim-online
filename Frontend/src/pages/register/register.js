@@ -1,5 +1,6 @@
 // register.js
 document.addEventListener("DOMContentLoaded", () => {
+  const API_BASE = "http://localhost:3000"; // Ajusta si tu backend corre en otro host/puerto
   console.log("✅ Página de registro cargada");
 
   const form = document.querySelector("form");
@@ -22,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return /^[0-9]{7,15}$/.test(tel);
   };
 
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", async (e) => {
     e.preventDefault(); // Evitar envío hasta validar
 
     //Validar campos obligatorios
@@ -63,17 +64,22 @@ document.addEventListener("DOMContentLoaded", () => {
       password: password.value,
     };
 
-    console.log("Datos listos para enviar:", data);
-    alert("Registro exitoso");
-
-    // conectar a la API y enviar datos(backend)
-    // fetch("/api/register", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify(data)
-    // })
-    //   .then(res => res.json())
-    //   .then(result => console.log(result))
-    //   .catch(err => console.error("❌ Error:", err));
+    try {
+      const res = await fetch(`${API_BASE}/api/users`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      const result = await res.json();
+      if (!res.ok) {
+        alert(`Error: ${result.message || "No se pudo registrar"}`);
+        return;
+      }
+      alert("✅ Registro exitoso, redirigiendo al login...");
+      window.location.href = "/Frontend/src/pages/login/login1.html";
+    } catch (err) {
+      console.error("❌ Error:", err);
+      alert("⚠️ No se pudo conectar con el servidor");
+    }
   });
 });
