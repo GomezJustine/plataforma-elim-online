@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="src/icons/icono.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/Frontend/src/icons/icono.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Elim Online</title>
     <meta name="description"
@@ -19,7 +19,7 @@
         
         <nav>
             <div class="logo">
-                <img src="src/images/logo-removebg-preview.png" alt="Logo de Elim Online" width="90" height="90" loading="lazy">
+                <img src="/Frontend/src/images/logo-removebg-preview.png" alt="Logo de Elim Online" width="90" height="90" loading="lazy">
             </div>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -28,14 +28,14 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
             <div class="nav-buttons">
-                <a href="src/pages/login/login1.html" class="btn-secondary">Iniciar Sesión</a>
-                <a href="src/pages/register/register.html" class="btn-primary">Registrarse</a>
+                <a href="/Frontend/src/pages/login/login1.html" class="btn-secondary">Iniciar Sesión</a>
+                <a href="/Frontend/src/pages/register/register.html" class="btn-primary">Registrarse</a>
             </div>
         </nav>
     </header>
     <main>
         <section id="inicio" class="hero">
-            <h1>Bienvenido a Elim Online</h1>
+            <h2>Bienvenido a Elim Online</h2>
             <p>
                 Elim Online es una plataforma en la que se ofrece la posibilidad de aprender de manera gratuita, en línea, de distintos cursos de diferentes disciplinas.
             </p>
@@ -45,44 +45,44 @@
             <p>Explora nuestra selección de cursos de bienestar diseñados para diferentes edades y necesidades.</p>
             <div class="cursos-lista">
                 <article class="curso">
-                    <img src="src/images/imagenPortada-curso.jpg" alt="Curso de Mindfulness para Niños" width="40" height="40" loading="lazy">
+                    <img src="https://www.pngitem.com/pimgs/m/420-4207035_arrow-down-icon-png-transparent-png.png" alt="Mindfulness para Niños" width="40" height="40" loading="lazy">
                     <h3>Mindfulness para Niños</h3>
                     <p>Aprende técnicas de relajación y atención plena diseñadas especialmente para los más pequeños.</p>
                     <ul>
                         <li>4 semanas</li>
                         <li>12 lecciones</li>
                     </ul>
-                    <a href="src/pages/cursos/curso-detalle.html" class="btn-secondary">Ver Curso</a>
+                    <a href="/Frontend/src/pages/cursos/curso-detalle.html" class="btn-secondary">Ver Curso</a>
                 </article>
                 <article class="curso">
-                    <img src="src/images/imagenPortada-curso.jpg" alt="Curso de Gestión del Estrés para Adultos" width="40" height="40">
+                    <img src="https://www.pngitem.com/pimgs/m/420-4207035_arrow-down-icon-png-transparent-png.png" alt="Gestión del Estrés para Adultos" width="40" height="40">
                     <h3>Gestión del Estrés para Adultos</h3>
                     <p>Herramientas prácticas para manejar el estrés y la ansiedad en la vida diaria.</p>
                     <ul>
                         <li>6 semanas</li>
                         <li>18 lecciones</li>
                     </ul>
-                    <a href="src/pages/cursos/curso-detalle.html" class="btn-secondary">Ver Curso</a>
+                    <a href="/Frontend/src/pages/cursos/curso-detalle.html" class="btn-secondary">Ver Curso</a>
                 </article>
                 <article class="curso">
-                    <img src="src/images/imagenPortada-curso.jpg" alt="Curso de Yoga Familiar" width="40" height="40">
+                    <img src="https://www.pngitem.com/pimgs/m/420-4207035_arrow-down-icon-png-transparent-png.png" alt="Yoga Familiar" width="40" height="40">
                     <h3>Yoga Familiar</h3>
                     <p>Práctica de yoga que pueden disfrutar juntos padres e hijos.</p>
                     <ul>
                         <li>8 semanas</li>
                         <li>24 lecciones</li>
                     </ul>
-                    <a href="src/pages/cursos/curso-detalle.html" class="btn-secondary">Ver Curso</a>
+                    <a href="/Frontend/src/pages/cursos/curso-detalle.html" class="btn-secondary">Ver Curso</a>
                 </article>
                 <article class="curso">
-                    <img src="src/images/imagenPortada-curso.jpg" alt="Curso de Conexión con la Naturaleza" width="40" height="40" loading="lazy">
+                    <img src="https://www.pngitem.com/pimgs/m/420-4207035_arrow-down-icon-png-transparent-png.png" alt="Conexión con la Naturaleza" width="40" height="40" loading="lazy">
                     <h3>Conexión con la Naturaleza</h3>
                     <p>Actividades al aire libre para mejorar el bienestar mental y físico.</p>
                     <ul>
                         <li>5 semanas</li>
                         <li>15 lecciones</li>
                     </ul>
-                    <a href="src/pages/cursos/curso-detalle.html" class="btn-secondary">Ver Curso</a>
+                    <a href="/Frontend/src/pages/cursos/curso-detalle.html" class="btn-secondary">Ver Curso</a>
                 </article>
             </div>
         </section>
@@ -95,15 +95,17 @@
         </section>
         <section id="contacto" class="contact">
             <h2>Contacto</h2>
-            <form class="contact-form" aria-label="Formulario de contacto">
-                <input type="text" placeholder="Nombre" required aria-label="Nombre">
-                <input type="email" placeholder="Correo electrónico" required aria-label="Correo electrónico">
-                <textarea placeholder="Tu mensaje" required aria-label="Mensaje"></textarea>
+            <form class="contact-form">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea placeholder="Tu mensaje" required></textarea>
                 <button type="submit" class="btn-primary">Enviar</button>
             </form>
         </section>
     </main>
-    <footer>
+    <script src="script.js"></script>
+</body>
+<footer>
         <p>&copy; 2025 Elim Online. Todos los derechos reservados.</p>
         <p>Contacto: info@elimonline.com | Tel: +34 912 345 678</p>
         <p>
@@ -112,8 +114,6 @@
             <a href="https://instagram.com" target="_blank">Instagram</a> |
             <a href="https://twitter.com" target="_blank">Twitter</a>
         </p>
-        <p>Dirección: Calle Bienestar 123, Santiago de Cali, Colombia</p>
+        <p>Dirección: Calle Bienestar 123, Cali, Colombia</p>
     </footer>
-    <script src="script.js"></script>
-</body>
 </html>
