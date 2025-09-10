@@ -46,3 +46,28 @@
     background: #e0def7;
     color: #483d8b;
 }
+
+
+/* ======================================== Header y Navbar ===== */
+header {
+    background: linear-gradient(90deg, #a39bc2 60%, #6c63a4 100%);
+    padding: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header nav figure {
+    margin: 0;
+}
+
+header nav .nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
