@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/login", "destination": "/pages/login/login1.html" },
+    { "source": "/register", "destination": "/pages/register/register.html" },
+    { "source": "/password", "destination": "/pages/password/password.html" },
+    { "source": "/perfil-configuracion", "destination": "/pages/perfil-configuracion/perfil-configuracion.html" },
+    { "source": "/terminoscondiciones", "destination": "/pages/terminoscondiciones/terminos.html" },
+    { "source": "/cursos", "destination": "/pages/cursos/cursos-detakle.html" },
+    { "source": "/dashboard", "destination": "/pages/dashboard/dashboard.html" }
+  ]
+}
